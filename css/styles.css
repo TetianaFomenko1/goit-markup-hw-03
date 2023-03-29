@@ -8,14 +8,8 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.02em;
   background-color: var(--brand-color);
   color: var(--color-body);
-}
-
-header {
-  border-bottom-style: 1px #e7e9fc;
 }
 
 h1,
@@ -62,6 +56,7 @@ img {
 
 header {
   border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
 }
 
 .visually-hidden {
@@ -92,10 +87,12 @@ header {
 /* logo */
 .logo {
   display: flex;
+  align-items: center;
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
@@ -218,9 +215,25 @@ header {
 /* second section */
 
 .qualities-container {
-  max-width: 1128px;
+  max-width: 100%;
   padding: 0;
   margin: 0 auto;
+}
+
+.qualities-section {
+  padding: 120px;
+}
+
+.list-qualities {
+  display: flex;
+  column-gap: 24px;
+}
+
+.qualities-item {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .qualities-item .qualities-title {
@@ -228,21 +241,45 @@ header {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  max-width: 264px;
   color: var(--color-text);
+  margin-bottom: 8px;
 }
+
 .qualities-item .qualities-text {
   line-height: 1.5;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 264px;
   letter-spacing: 0.02em;
+  color: var(--color-body);
 }
 
 /* third section */
+
+.activities-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
 .activities .title-activities {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--color-text);
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
+
+.activities-item {
+  display: block;
+  align-items: center;
+}
+
 /* fourth section */
 .section-team {
   background-color: #f4f4fd;
