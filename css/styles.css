@@ -55,11 +55,16 @@ img {
 
 /* header */
 
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
-  outline: 2px solid tomato;
+  justify-content: space-between;
   width: 100%;
+  margin: 0;
 }
 .site-nav {
   display: flex;
@@ -75,6 +80,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
+  padding: 24px;
 }
 
 .logo-tip {
@@ -91,20 +97,29 @@ img {
 }
 .list-nav {
   display: flex;
-  margin: 0;
-  padding: 0;
+  gap: 0 40px;
+  margin: 0 0 0 auto;
 }
 
 .list-nav .link {
+  display: block;
+  padding: 24px;
   color: var(--color-text);
 }
 
 /* address */
 
+.address-item {
+  align-self: flex-end;
+}
+
 .address-list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  gap: 0 40px;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 24px;
 }
 
 .list-nav .link:hover,
@@ -122,6 +137,7 @@ img {
 }
 
 .address-list .link {
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-contacts);
@@ -132,12 +148,29 @@ img {
 .section-main {
   background-color: var(--color-text);
 }
+
+.title-container {
+  max-width: 1128px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 .section-main .title {
-  font-size: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  padding-top: 188px;
+  padding-bottom: 48px;
+  padding-left: 472px;
+  padding-right: 472px;
+  /* Family: Roboto */
+  /* Weight: Bold */
+  /* Size: 56px */
+  /* Letter Spacing: 2% */
+  /* Line Height: 60px */
 }
 .button-order {
   background-color: var(--color-logo);
