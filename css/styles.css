@@ -350,26 +350,95 @@ header {
 }
 
 .footer-width {
-  width: 264px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding-top: 100px;
   padding-left: 156px;
   padding-bottom: 100px;
 }
 
 .logo {
-  width: 115px;
+  max-width: 115px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
 }
 
 .footer-text {
-  width: 264px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  letter-spacing: 0.02em;
+  max-width: 264px;
   margin-top: 16px;
+  color: var(--color-btn);
+  margin-right: auto;
 }
 
 .logo .logo-footer {
   color: #f4f4fd;
 }
 
+.logo .link {
+  max-width: 44px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-footer {
+  width: 71px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* portfolio */
+
+.container-portfolio {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header-portfolio */
+
+/* section-portfolio */
+
+.knopki {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  max-width: 586px;
+  padding-top: 96px;
+  padding-right: 427px;
+  padding-left: 427px;
+}
 
 .button-filt {
   font-family: "Roboto", sans-serif;
@@ -380,12 +449,16 @@ header {
   color: var(--color-logo);
   background-color: var(--color-btn);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .button-filt:hover,
 .button-filt:focus {
   color: #ffffff;
   background-color: #404bbf;
 }
+
+/* pictures */
 
 .picture-link .title-portfolio {
   font-weight: 500;
