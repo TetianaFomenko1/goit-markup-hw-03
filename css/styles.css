@@ -84,7 +84,6 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0;
 }
 .site-nav {
@@ -121,7 +120,7 @@ header {
 }
 .list-nav {
   display: flex;
-  margin: 0 0 0 auto;
+  margin: 0 332px 0 auto;
   padding: 24px 0;
   gap: 40px;
 }
@@ -133,16 +132,9 @@ header {
 
 /* address */
 
-.address-item {
-  align-self: flex-end;
-}
-
 .address-list {
   display: flex;
   gap: 0 40px;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 24px 0;
 }
 
